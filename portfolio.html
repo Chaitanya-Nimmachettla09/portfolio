@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>simple portfolio web page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f9f9f9;
+  }
+  header {
+    background: #171313;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  nav {
+    background: #444;
+    text-align: center;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+  }
+  nav a {
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  nav a:hover, nav a.active {
+    background: #0077cc;
+  }
+  section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+    
+  #home img, #about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+  }
+  #contact a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  /* Additional CSS for the new form styling */
+  .simple-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .simple-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .simple-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  .simple-form button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome To My Portfolio</h1>
+</header>
+
+<nav>
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <img src="image.jpg" alt="Chaitanya's photo" />
+  <h2>Chaitanya Nimmachettla</h2>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  
+  <p>Hello! I am Chaitanya Nimmachettla, an AIML (Artificial Intelligence and Machine Learning) student passionate about technology and innovation. I am eager to learn and grow in the exciting field of AI and ML.</p>
+</section>
+<section 01 id="skills">
+
+    
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via any of the platforms below:</p>
+  <a href="https://www.linkedin.com/in/chaitanya-nimmachettla09?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://www.instagram.com/_chaitanya.09._?igsh=MWd2ZnBteGhxZHE4Mg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+  <a href="mailto:chaitanyareddy6669@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a>
+  
+  <!-- New Form -->
+  <div class="simple-form">
+    <h3>Send a Message</h3>
+    <form action="#" method="post">
+      <input type="text" name="message" placeholder="Your message" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Highlight active navigation link on click
+  const links = document.querySelectorAll('nav a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
