@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive cards</title>
+    <style>
+      *{
+      box-sizing:border-box ;
+      padding: 0;
+      margin:0;
+  }
+  body {
+      background: rgb(27 27 27);
+  }
+  .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+  .card {
+      background:white;
+      border-radius: 8px;
+      width: 270px;
+      margin: 10px;
+      border:radius 15px;
+      
+  }
+  .card-image{
+      height: 180px;
+      margin-bottom: 15px;
+      background-size: cover;
+      border-radius: 15px 15px 0 0;
+  }
+  .car-1{
+      background-image: url('https://wallpapercave.com/wp/wp5304857.jpg');
+  }
+  .car-2{
+      background-image: url('https://tse2.mm.bing.net/th/id/OIP.imVOSzGYlpQTdP2wog3ldQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');
+  }
+  .car-3{
+      background-image: url('https://tse4.mm.bing.net/th/id/OIP.BBiqvPe6cwfxE4T_xy6XOgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3');
+  }
+  .card p{
+    padding: 10px;
+  }
+  .card a{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+  .card:hover{
+    background-color: rgb(62 62 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+
+
+
+  </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="card-image car-1"></div>
+        <h2>Car 1</h2>
+        <p>A sports car is a high-performance vehicle designed for speed, agility, and driving excitement. It usually has a powerful engine, lightweight body, and low center of gravity for better handling and acceleration. Sports cars often feature sleek, aerodynamic designs that enhance both looks and performance.  </p>
+        <a href="">Read more</a>
+      </div>
+          <div class="card">
+        <div class="card-image car-2"></div>
+        <h2>Car 2</h2>
+        <p> 
+
+  Rolls-Royce is a British luxury car brand known for its elegance, craftsmanship, and smooth performance. Founded in 1906 by Charles Rolls and Henry Royce, the company builds hand-crafted vehicles that symbolize wealth and prestige</p>
+  <br>
+  <br>
+          <a href="">Read more</a>
+      </div>
+          <div class="card">
+        <div class="card-image car-3"></div>
+        <h2>Car 3</h2>
+        <p>
+
+  BMW (Bayerische Motoren Werke) is a German luxury automobile and motorcycle manufacturer founded in 1916. Known for blending performance, innovation, and style, BMW cars are often recognized by their slogan, “The Ultimate Driving Machine.”</p>
+  <br>
+  <a href="">Read more</a>
+        
+
+      </div>
+
+    </section>
+    
+  </body>
+  </html>
